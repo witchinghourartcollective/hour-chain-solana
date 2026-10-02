@@ -1,6 +1,6 @@
 # hOUR Solana Consent Kit (`hour-chain-solana`)
 
-**Open-source passkey consent and creator-rights attestations on Solana.** Part of [hOUR Chain](https://github.com/witchinghourartcollective/hOUR-Chain), the creator-rights, provenance, and settlement protocol from Witching Hour Music & Art Collective (Savannah, GA).
+**Open-source passkey consent and creator-rights attestations on Solana.** Part of [hOUR Chain](https://github.com/witchinghourartcollective/hOUR-Chain), the creator-rights, provenance, and settlement protocol from Witching Hour Music (Savannah, GA).
 
 > **Status: pre-alpha (Milestone 1 scaffold).** Not audited. Not deployed to devnet or mainnet. The program ID in the code is a placeholder. Don't use it for real rights decisions or funds.
 
