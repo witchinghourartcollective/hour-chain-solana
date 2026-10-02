@@ -1,0 +1,32 @@
+{
+  "name": "@hour-chain/solana-consent",
+  "version": "0.0.1",
+  "description": "hOUR Solana Consent Kit TypeScript SDK (pre-alpha): passkey consent digests, secp256r1 precompile instructions, consent record PDAs, split payout reference math.",
+  "license": "MIT OR Apache-2.0",
+  "type": "module",
+  "private": true,
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/witchinghourartcollective/hour-chain-solana.git",
+    "directory": "sdk/ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "vectors": "npm run build && node dist/scripts/gen-vectors.js"
+  },
+  "dependencies": {
+    "@noble/curves": "^2.4.0",
+    "@noble/hashes": "^2.4.0",
+    "@solana/kit": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^7.0.2"
+  }
+}

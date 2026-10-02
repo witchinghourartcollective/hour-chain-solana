@@ -1,0 +1,18 @@
+[package]
+name = "hour-consent-litesvm-tests"
+version = "0.0.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dev-dependencies]
+hour-consent = { path = "../../programs/hour-consent", features = ["no-entrypoint"] }
+litesvm = { version = "0.17", features = ["precompiles"] }
+solana-address = "~2.7"
+solana-instruction = "3"
+solana-keypair = "3"
+solana-message = "4"
+solana-signer = "3"
+solana-transaction = "4"
+serde_json = "1"
+solana-clock = "3"

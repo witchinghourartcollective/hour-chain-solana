@@ -1,0 +1,7 @@
+/target
+**/node_modules
+**/dist
+*.so
+# Program keypairs are secrets; never commit them.
+*-keypair.json
+.env*

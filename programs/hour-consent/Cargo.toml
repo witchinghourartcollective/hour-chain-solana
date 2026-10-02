@@ -1,0 +1,37 @@
+[package]
+name = "hour-consent"
+version = "0.0.1"
+edition = "2021"
+description = "hOUR Solana Consent Kit: record passkey (secp256r1) verified consent for creator-rights split versions"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/witchinghourartcollective/hour-chain-solana"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-account-info = "3"
+solana-clock = "3"
+solana-cpi = "3"
+solana-instructions-sysvar = "4"
+solana-msg = "3"
+solana-program-entrypoint = "3"
+solana-program-error = "3"
+solana-pubkey = { version = "4", features = ["curve25519"] }
+solana-rent = "4"
+solana-sdk-ids = "3"
+solana-security-txt = "1.1"
+solana-sha256-hasher = "3"
+solana-system-interface = { version = "3", features = ["bincode"] }
+solana-sysvar = "4"
+
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))', 'cfg(feature, values("custom-heap", "custom-panic"))'] }
+
+[dev-dependencies]
+serde_json = "1.0.151"

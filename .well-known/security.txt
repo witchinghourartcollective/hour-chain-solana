@@ -1,0 +1,6 @@
+Contact: mailto:witchinghour@witchinghourmac.com
+Contact: https://github.com/witchinghourartcollective/hour-chain-solana/security/advisories/new
+Expires: 2027-10-01T00:00:00.000Z
+Preferred-Languages: en
+Policy: https://github.com/witchinghourartcollective/hour-chain-solana/blob/main/SECURITY.md
+Canonical: https://github.com/witchinghourartcollective/hour-chain-solana/blob/main/.well-known/security.txt
