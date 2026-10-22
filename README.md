@@ -4,6 +4,17 @@
 
 > **Status: pre-alpha (Milestone 1 scaffold).** Not audited. Not deployed to devnet or mainnet. The program ID in the code is a placeholder. Don't use it for real rights decisions or funds.
 
+
+## hOURs and real creative time
+
+**Spending hOURS like currency: make the real hours behind creative work visible, attributable, and compensable.**
+
+The hOUR Chain (HBC) product model connects hOURs to actual hours spent producing, engineering, rehearsing, performing, designing, and doing other creative work. Participants should be able to document their time, attach supporting evidence, mutually approve contributions, and connect approved records to agreed fees, rights splits, or revenue-sharing terms.
+
+An approved hour is a contribution record. Its monetary value and any associated rights depend on the participants' agreement. The time record, rights agreement, payment obligation, and settlement receipt must remain distinct and traceable. This concept does not establish a token conversion rate or change the current token model.
+
+This is a product and implementation requirement; the complete time-recording and approval workflow is not claimed as implemented. See [Real-hours contribution model](https://github.com/witchinghourartcollective/hOUR-Chain/blob/main/docs/TIME-CONTRIBUTIONS.md) for the workflow, integration boundaries, and future GCUL adapter requirements.
+
 ## Why
 
 When a song comes out, who agreed to which credits and splits usually lives in text threads. Most collaborators don't have crypto wallets. This kit lets a collaborator approve a specific split version with a **passkey** (Face ID / Touch ID / security key) and records that approval **verifiably on Solana**:
