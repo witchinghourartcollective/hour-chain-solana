@@ -84,3 +84,7 @@ The GitHub Actions workflow is at [`ci/github-actions-ci.yml`](ci/github-actions
 ## License
 
 Licensed under either of [Apache License 2.0](LICENSE-APACHE) or [MIT](LICENSE-MIT), at your option. `SPDX-License-Identifier: MIT OR Apache-2.0`
+
+## SocialFi creator consent
+
+The SDK exports `prepareSocialFiConsent` for work-bound, independently reviewed split documents. Social actions and recorded minutes do not grant rights or set payouts. See [SocialFi consent boundary](docs/SOCIALFI.md).

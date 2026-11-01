@@ -4,3 +4,4 @@ export * from "./precompile.js";
 export * from "./instruction.js";
 export * from "./sas.js";
 export * from "./splits.js";
+export { prepareSocialFiConsent } from './socialfi.js';
