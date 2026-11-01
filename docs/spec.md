@@ -9,7 +9,7 @@ The key words MUST, SHOULD, and MAY are used as in RFC 2119.
 
 Record, verifiably and publicly, that a specific contributor approved a specific version of a creator-rights split (credits and percentages) for a specific release, using a **passkey** (WebAuthn / FIDO2, P-256) instead of a crypto wallet.
 
-**Chain roles (hOUR Chain ADR-0004):** Solana is the primary chain for approvals/consent and attestations. Base is the payments/settlement chain. Payment receipts on Base are linked back to Solana consent records (§7).
+**Chain roles (hOUR Chain ADR-0008, amending ADR-0005):** Solana consent/attestations are an active major workstream alongside the sovereign Cosmos EVM hOUR Chain L1, Filecoin evidence, and existing Base integrations. This specification retains the prototype Base payment-reference format (§7); it does not prove a deployed settlement or IBC path. Cosmos acceptance must verify the Solana program/record, finality, identity, replay and revocation policy.
 
 ## 2. Actors and identifiers
 
