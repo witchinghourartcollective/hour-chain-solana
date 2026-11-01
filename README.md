@@ -22,9 +22,9 @@ When a song comes out, who agreed to which credits and splits usually lives in t
 - **Passkey consent:** P-256 signatures verified by Solana's native `Secp256r1SigVerify` precompile ([SIMD-0075](https://github.com/solana-foundation/solana-improvement-documents/blob/main/proposals/0075-precompile-for-secp256r1-sigverify.md)). No seed phrase, wallet, or custodial key.
 - **Solana Attestation Service records:** open schemas (contributor credit, split version, consent receipt, settlement receipt) so any app can verify them.
 - **Links to hOUR post-quantum-signed records:** each record can commit to an hOUR Chain event signed off-chain with ML-DSA-65 (FIPS 204). The boundary is explicit: Solana, secp256r1, and Base are not quantum-safe.
-- **USDC split reference flow:** deterministic payout math producing settlement instructions for **Base** (hOUR Chain's payments chain), whose receipts are attested back on Solana.
+- **USDC split reference flow:** deterministic payout math producing settlement instructions for **Base** (the existing external settlement reference), whose receipts are attested back on Solana.
 
-**Chain roles:** Solana = primary chain for approvals/consent and attestations. Base = payments/settlement. (hOUR Chain ADR-0004.)
+**Chain roles:** [ADR-0008](https://github.com/witchinghourartcollective/hOUR-Chain/blob/main/docs/ADR-0008-solana-filecoin-ibc.md) restores Solana consent/attestations as an active major workstream. Cosmos EVM remains the sovereign hOUR Chain L1, Filecoin archives evidence, and existing Base integrations remain separate. The development pause is lifted; program deployment, real browser WebAuthn and verified Cosmos ingestion remain gates. See [Launch gates](docs/LAUNCH-GATES.md).
 
 ## What's implemented today (honest status)
 
