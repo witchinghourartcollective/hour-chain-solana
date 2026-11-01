@@ -11,11 +11,11 @@ export function prepareSocialFiConsent(args: {
   workId: string; reviewedSplitVersionHash: Uint8Array;
   contributorPublicKey: Uint8Array; nonce: bigint; expiry: bigint;
 }): ConsentFields {
-  if (typeof args.workId !== 'string' || !args.workId.startsWith('hour:work:') || args.workId.length > 300) {
+  if (typeof args.workId !== 'string' || !args.workId.startsWith('hour:work:') || args.workId.length <= 10 || args.workId.length > 300) {
     throw new TypeError('A registered hOUR work identifier is required');
   }
   assertLen('reviewedSplitVersionHash', args.reviewedSplitVersionHash, 32);
-  if (args.nonce < 0n || args.nonce >= 2n ** 64n || args.expiry <= 0n || args.expiry >= 2n ** 63n) {
+  if (typeof args.nonce !== 'bigint' || typeof args.expiry !== 'bigint' || args.nonce < 0n || args.nonce >= 2n ** 64n || args.expiry <= 0n || args.expiry >= 2n ** 63n) {
     throw new TypeError('Invalid consent nonce or expiry');
   }
   return { releaseId: hashId(args.workId), splitVersionHash: new Uint8Array(args.reviewedSplitVersionHash),

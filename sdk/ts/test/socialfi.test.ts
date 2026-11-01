@@ -11,6 +11,7 @@ test('SocialFi consent requires a separately reviewed split hash and binds work 
   assert.notDeepEqual(consentDigest(fields), consentDigest(prepareSocialFiConsent({...args,workId:'hour:work:two'})));
   assert.throws(() => prepareSocialFiConsent({...args, reviewedSplitVersionHash:new Uint8Array(1)}));
   assert.throws(() => prepareSocialFiConsent({...args, workId:'post:one'}));
+  assert.throws(() => prepareSocialFiConsent({...args, workId:'hour:work:'}));
   assert.throws(() => prepareSocialFiConsent({...args, nonce:-1n}));
   args.reviewedSplitVersionHash.fill(0);
   assert.equal(fields.splitVersionHash[0], 1);
