@@ -15,6 +15,8 @@ An approved hour is a contribution record. Its monetary value and any associated
 
 This is a product and implementation requirement; the complete time-recording and approval workflow is not claimed as implemented. See [Real-hours contribution model](https://github.com/witchinghourartcollective/hOUR-Chain/blob/main/docs/TIME-CONTRIBUTIONS.md) for the workflow, integration boundaries, and future GCUL adapter requirements.
 
+GCUL status: accounts and a test transfer are verified on the no-value `integration-testing` network; the adapter is not implemented. See [GCUL integration-testing status](https://github.com/witchinghourartcollective/hOUR-Chain/blob/main/docs/GCUL-INTEGRATION-TESTING.md).
+
 ## Why
 
 When a song comes out, who agreed to which credits and splits usually lives in text threads. Most collaborators don't have crypto wallets. This kit lets a collaborator approve a specific split version with a **passkey** (Face ID / Touch ID / security key) and records that approval **verifiably on Solana**:
